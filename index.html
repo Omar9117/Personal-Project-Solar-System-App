@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <title>Solar System Explorer</title>
+  <link rel="stylesheet" href="css/home.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="js/solar-system.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">✦</span>
+      Solar System <span>Explorer</span>
+    </a>
+
+    <nav>
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="compare.html">Compare</a>
+      <a class="nav-link" href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">YOUR JOURNEY THROUGH SPACE</p>
+      <h1>Eight worlds, <span>one star.</span></h1>
+      <p class="intro-text">
+        Explore our Solar System in three dimensions. Rotate your view,
+        travel closer to distant worlds, and select a celestial body
+        to discover more about it.
+      </p>
+    </section>
+
+    <section class="explorer-section" aria-label="Interactive 3D solar system">
+      <div class="viewer-heading">
+        <div>
+          <p class="eyebrow">INTERACTIVE SIMULATION</p>
+          <h2>The Solar System</h2>
+        </div>
+        <span class="live-indicator">
+          <span></span> 3D EXPLORER
+        </span>
+      </div>
+
+      <div class="viewer" id="solar-viewer">
+        <div class="loading-message" id="loading-message">
+          <div class="loading-orbit"></div>
+          <p>Preparing your journey through space...</p>
+        </div>
+
+        <div class="viewer-label">
+          <span class="label-dot"></span>
+          SOLAR SYSTEM
+        </div>
+
+        <div class="viewer-help">
+          <span>↔ Drag to rotate</span>
+          <span>⊕ Scroll to zoom</span>
+          <span>◉ Click a planet to explore</span>
+        </div>
+
+        <div class="planet-tooltip" id="planet-tooltip" hidden>
+          <button
+            class="tooltip-close"
+            id="tooltip-close"
+            aria-label="Close planet information"
+          >×</button>
+          <p class="eyebrow">CELESTIAL BODY</p>
+          <h3 id="tooltip-name">Earth</h3>
+          <p id="tooltip-description"></p>
+          <a id="tooltip-link" href="planets/earth.html">
+            Explore this world <span>↗</span>
+          </a>
+        </div>
+
+        <div class="viewer-error" id="viewer-error" hidden>
+          The 3D explorer could not load. Check your internet connection
+          and open this page through a local web server.
+        </div>
+      </div>
+
+      <div class="viewer-controls">
+        <p class="control-note">
+          Planet sizes and distances are adjusted for visibility.
+        </p>
+        <div class="control-buttons">
+          <button class="control-button" id="toggle-orbits" type="button">
+            Hide orbits
+          </button>
+          <button class="control-button primary" id="reset-view" type="button">
+            ↻ Reset view
+          </button>
+        </div>
+      </div>
+    </section>
+    
+<section class="classic-section" id="2d-solar-system">
+  <div class="classic-heading">
+    <p class="eyebrow">THE CLASSIC VIEW</p>
+    <h2>Our Solar System in <span>2D</span></h2>
+    <p>
+      Watch the planets travel around the Sun in this animated
+      top-down view of our cosmic neighbourhood.
+    </p>
+  </div>
+
+  <div class="classic-stage">
+    <div class="classic-sun">
+      <a href="planets/sun.html" aria-label="Explore the Sun">
+        <img src="images/sun.png" alt="The Sun">
+      </a>
+      <span class="classic-label">SUN</span>
+    </div>
+
+    
+<div class="classic-orbit classic-mercury">
+  <a class="classic-planet" href="planets/mercury.html"
+     aria-label="Explore Mercury" title="Mercury">
+    <img src="images/mercury.png" alt="Mercury">
+  </a>
+  <span class="classic-planet-label">Mercury</span>
+</div>
+
+<div class="classic-orbit classic-venus">
+  <a class="classic-planet" href="planets/venus.html"
+     aria-label="Explore Venus" title="Venus">
+    <img src="images/venus.png" alt="Venus">
+  </a>
+  <span class="classic-planet-label">Venus</span>
+</div>
+
+<div class="classic-orbit classic-earth">
+  <a class="classic-planet" href="planets/earth.html"
+     aria-label="Explore Earth" title="Earth">
+    <img src="images/earth.png" alt="Earth">
+  </a>
+  <span class="classic-planet-label">Earth</span>
+</div>
+
+<div class="classic-orbit classic-mars">
+  <a class="classic-planet" href="planets/mars.html"
+     aria-label="Explore Mars" title="Mars">
+    <img src="images/mars.png" alt="Mars">
+  </a>
+  <span class="classic-planet-label">Mars</span>
+</div>
+
+<div class="classic-orbit classic-jupiter">
+  <a class="classic-planet" href="planets/jupiter.html"
+     aria-label="Explore Jupiter" title="Jupiter">
+    <img src="images/jupiter.png" alt="Jupiter">
+  </a>
+  <span class="classic-planet-label">Jupiter</span>
+</div>
+
+<div class="classic-orbit classic-saturn">
+  <a class="classic-planet" href="planets/saturn.html"
+     aria-label="Explore Saturn" title="Saturn">
+    <img src="images/saturn.png" alt="Saturn">
+  </a>
+  <span class="classic-planet-label">Saturn</span>
+</div>
+
+<div class="classic-orbit classic-uranus">
+  <a class="classic-planet" href="planets/uranus.html"
+     aria-label="Explore Uranus" title="Uranus">
+    <img src="images/uranus.png" alt="Uranus">
+  </a>
+  <span class="classic-planet-label">Uranus</span>
+</div>
+
+<div class="classic-orbit classic-neptune">
+  <a class="classic-planet" href="planets/neptune.html"
+     aria-label="Explore Neptune" title="Neptune">
+    <img src="images/neptune.png" alt="Neptune">
+  </a>
+  <span class="classic-planet-label">Neptune</span>
+</div>
+
+    <div class="classic-caption">
+      <span class="classic-caption-dot"></span>
+      ANIMATED ORBITAL VIEW
+    </div>
+  </div>
+
+  <p class="classic-note">
+    Orbital distances, planet sizes and speeds are adjusted for
+    visibility and illustration. They are not to scale.
+  </p>
+</section>
+
+    <section class="worlds-section" id="planets">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MEET OUR NEIGHBOURS</p>
+          <h2>Explore the celestial bodies</h2>
+        </div>
+        <p>Choose a world to continue your journey.</p>
+      </div>
+
+      <div class="planet-grid">
+        <a class="planet-card sun-card" href="planets/sun.html">
+          <div class="card-image"><img src="images/sun.png" alt="The Sun"></div>
+          <div class="card-content">
+            <span class="card-number">STAR 01</span>
+            <h3>The Sun</h3>
+            <p>The star at the centre of our Solar System.</p>
+            <span class="card-link">Discover the Sun ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/mercury.html">
+          <div class="card-image"><img src="images/mercury.png" alt="Mercury"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 01</span>
+            <h3>Mercury</h3>
+            <p>The smallest planet and the closest to the Sun.</p>
+            <span class="card-link">Explore Mercury ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/venus.html">
+          <div class="card-image"><img src="images/venus.png" alt="Venus"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 02</span>
+            <h3>Venus</h3>
+            <p>A world of thick clouds and extreme heat.</p>
+            <span class="card-link">Explore Venus ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/earth.html">
+          <div class="card-image"><img src="images/earth.png" alt="Earth"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 03</span>
+            <h3>Earth</h3>
+            <p>Our home and the only world known to support life.</p>
+            <span class="card-link">Explore Earth ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/mars.html">
+          <div class="card-image"><img src="images/mars.png" alt="Mars"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 04</span>
+            <h3>Mars</h3>
+            <p>The red planet, with ancient valleys and volcanoes.</p>
+            <span class="card-link">Explore Mars ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/jupiter.html">
+          <div class="card-image"><img src="images/jupiter.png" alt="Jupiter"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 05</span>
+            <h3>Jupiter</h3>
+            <p>The largest planet in our Solar System.</p>
+            <span class="card-link">Explore Jupiter ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/saturn.html">
+          <div class="card-image"><img src="images/saturn.png" alt="Saturn"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 06</span>
+            <h3>Saturn</h3>
+            <p>A gas giant famous for its spectacular rings.</p>
+            <span class="card-link">Explore Saturn ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/uranus.html">
+          <div class="card-image"><img src="images/uranus.png" alt="Uranus"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 07</span>
+            <h3>Uranus</h3>
+            <p>An ice giant that rotates on a dramatic tilt.</p>
+            <span class="card-link">Explore Uranus ↗</span>
+          </div>
+        </a>
+
+        <a class="planet-card" href="planets/neptune.html">
+          <div class="card-image"><img src="images/neptune.png" alt="Neptune"></div>
+          <div class="card-content">
+            <span class="card-number">PLANET 08</span>
+            <h3>Neptune</h3>
+            <p>A distant ice giant with powerful winds.</p>
+            <span class="card-link">Explore Neptune ↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">✦</span>
+      Solar System <span>Explorer</span>
+    </a>
+    <p>A little closer to the universe, one world at a time.</p>
+  </footer>
+</body>
+</html>

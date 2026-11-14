@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap');
+
+/* =========================
+   CSS Variables
+========================= */
+
+:root {
+    --bg: #050816;
+    --panel: rgba(14, 22, 47, 0.88);
+    --border: rgba(148, 163, 220, 0.22);
+    --text: #f5f7ff;
+    --muted: #aeb8d5;
+    --cyan: #67e8f9;
+    --purple: #a5b4fc;
+}
+
+/* =========================
+   Global Styles
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(83, 60, 180, 0.2),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 35%,
+            rgba(37, 99, 235, 0.13),
+            transparent 30%
+        ),
+        var(--bg);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 5px;
+}
+
+/* =========================
+   Navigation
+========================= */
+header {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 78px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+header > a:first-child {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 26px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--cyan);
+}
+
+/* =========================
+   Main Content
+========================= */
+
+main {
+    width: min(1400px, 88%);
+    margin: 0 auto;
+    padding: 65px 0 80px;
+}
+
+.hero {
+    max-width: 800px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 14px;
+    color: var(--cyan);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    background: rgba(103, 232, 249, 0.06);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0 0 18px;
+    font-family: "Orbitron", sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    background: linear-gradient(
+        100deg,
+        #ffffff,
+        var(--purple),
+        var(--cyan)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+/* =========================
+   Comparison Table Panel
+========================= */
+
+.table-panel {
+    padding: 26px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: var(--panel);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
+
+.table-heading {
+    margin: 0 0 6px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.table-description {
+    margin: 0 0 22px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+caption {
+    padding: 12px;
+    color: var(--muted);
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+thead {
+    background: rgba(103, 232, 249, 0.09);
+}
+
+th,
+td {
+    padding: 15px 16px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+thead th {
+    color: var(--cyan);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+tbody th {
+    color: var(--text);
+    font-weight: 600;
+}
+
+tbody td {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+tbody tr {
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+tbody tr:hover {
+    background: rgba(165, 180, 252, 0.09);
+    box-shadow: inset 3px 0 var(--cyan);
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================
+   Planet Names and Indicators
+========================= */
+
+.planet-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.planet-dot {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--purple);
+    box-shadow: 0 0 12px rgba(165, 180, 252, 0.65);
+}
+
+tbody tr:nth-child(3) .planet-dot {
+    background: var(--cyan);
+    box-shadow: 0 0 12px rgba(103, 232, 249, 0.65);
+}
+
+/* =========================
+   Image Panel
+========================= */
+
+.image-panel {
+    margin-top: 32px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: var(--panel);
+}
+
+.image-panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
+}
+
+.image-caption {
+    padding: 14px 20px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    padding: 24px 7%;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+footer strong {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 650px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 6%;
+    }
+
+    nav ul {
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: 92%;
+        padding: 42px 0 55px;
+    }
+
+    .table-panel {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .hero {
+        margin-bottom: 30px;
+    }
+}
+
+/* =========================
+   Reduced Motion Accessibility
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
