@@ -1345,55 +1345,246 @@ footer a {
     color: #17111a;
 }
 
-/* =========================
+/* =========================================
    EARTH PLANET THEME
-========================= */
+========================================= */
 
 .earth-page {
     --planet-accent: #67d9e8;
 }
 
-/* Earth atmosphere glow */
+/* EARTH ATMOSPHERE */
+
 .earth-page .planet-glow {
     background: radial-gradient(
         circle,
-        rgba(65, 190, 230, 0.28) 0%,
-        rgba(45, 150, 120, 0.16) 45%,
-        transparent 75%
+        rgba(75, 190, 230, 0.32),
+        rgba(45, 150, 120, 0.13) 50%,
+        transparent 72%
     );
 }
 
-/* Earth image appearance */
-.earth-page .planet-image {
-    filter: drop-shadow(0 0 38px rgba(75, 190, 230, 0.4));
+.earth-page .orbit {
+    border-color: rgba(103, 217, 232, 0.2);
 }
 
-/* Earth accent details */
-.earth-page .section-heading span,
-.earth-page .eyebrow {
+.earth-page .orbit-two {
+    border-color: rgba(67, 168, 140, 0.25);
+}
+
+.earth-page .planet-image {
+    filter: drop-shadow(
+        0 0 35px rgba(75, 190, 230, 0.4)
+    );
+}
+
+/* EARTH ACCENT COLOURS */
+
+.earth-page .planet-subtitle {
     color: var(--planet-accent);
 }
 
-.earth-page .fact-card:hover {
-    border-color: rgba(103, 217, 232, 0.6);
+.earth-page .button-primary {
+    background: linear-gradient(
+        110deg,
+        #67d9e8,
+        #43a88c
+    );
+
+    color: #04101b;
 }
 
-/* Earth buttons */
-.earth-page .planet-button {
+/* INTERNAL STRUCTURE DIAGRAM */
+
+.earth-page .structure-diagram {
+    background: #a8d9e9;
+
+    box-shadow: 0 0 45px rgba(103, 217, 232, 0.2);
+}
+
+.earth-page .structure-mantle {
+    width: 85%;
+    background: #c76d39;
+}
+
+.earth-page .structure-core {
+    width: 65%;
+    background: #e89b36;
+}
+
+.earth-page .earth-inner-core {
+    width: 55%;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background: #ffe08a;
+
+    box-shadow: 0 0 20px rgba(255, 224, 138, 0.5);
+}
+
+/* STRUCTURE LEGEND */
+
+.earth-page .crust-dot {
+    background: #a8d9e9;
+}
+
+.earth-page .mantle-dot {
+    background: #c76d39;
+}
+
+.earth-page .core-dot {
+    background: #e89b36;
+}
+
+.earth-page .inner-core-dot {
+    background: #ffe08a;
+}
+
+/* EARTH DISCOVERY SECTION */
+
+.earth-page .discovery-card {
+    border-color: rgba(103, 217, 232, 0.25);
+
+    background: linear-gradient(
+        145deg,
+        rgba(25, 90, 130, 0.2),
+        rgba(25, 120, 95, 0.12)
+    );
+}
+
+/* EARTH MISSION VISUAL */
+
+.earth-page .mission-symbol {
     background: linear-gradient(
         135deg,
         #67d9e8,
         #43a88c
     );
-    color: #061521;
 }
 
-/* Earth-specific atmospheric details */
+/* EARTH CLOSING BANNER */
+
 .earth-page .closing-banner {
-    border-color: rgba(103, 217, 232, 0.35);
+    border-color: rgba(103, 217, 232, 0.3);
+
+    background:
+        radial-gradient(
+            ellipse at 50% 120%,
+            rgba(67, 168, 140, 0.17),
+            transparent 65%
+        ),
+        var(--panel);
+}
+
+/* =========================================
+   MARS PLANET THEME
+========================================= */
+
+.mars-page {
+    --planet-accent: #ff805c;
+}
+
+/* MARS ATMOSPHERE */
+.mars-page .planet-glow {
+    background: radial-gradient(
+        circle,
+        rgba(255, 105, 65, 0.32),
+        rgba(170, 65, 35, 0.15) 50%,
+        transparent 75%
+    );
+}
+
+.mars-page .orbit {
+    border-color: rgba(255, 128, 92, 0.22);
+}
+
+.mars-page .orbit-two {
+    border-color: rgba(205, 90, 65, 0.25);
+}
+
+.mars-page .planet-image {
+    filter: drop-shadow(
+        0 0 35px rgba(255, 105, 65, 0.4)
+    );
+}
+
+/* MARS ACCENT COLOURS */
+.mars-page .planet-subtitle {
+    color: var(--planet-accent);
+}
+
+.mars-page .eyebrow {
+    color: var(--planet-accent);
+}
+
+.mars-page .button-primary {
+    background: linear-gradient(
+        110deg,
+        #ff805c,
+        #d94f36
+    );
+    color: #190905;
+}
+
+/* INTERNAL STRUCTURE DIAGRAM */
+.mars-page .structure-diagram {
+    background: #a94f38;
+    box-shadow: 0 0 45px rgba(255, 105, 65, 0.2);
+}
+
+.mars-page .structure-mantle {
+    width: 85%;
+    background: #d77a42;
+}
+
+.mars-page .structure-core {
+    width: 65%;
+    background: #e9a34b;
+}
+
+/* STRUCTURE LEGEND */
+.mars-page .crust-dot {
+    background: #a94f38;
+}
+
+.mars-page .mantle-dot {
+    background: #d77a42;
+}
+
+.mars-page .core-dot {
+    background: #e9a34b;
+}
+
+/* MARS DISCOVERY SECTION */
+.mars-page .discovery-card {
+    border-color: rgba(255, 128, 92, 0.3);
+
+    background: linear-gradient(
+        145deg,
+        rgba(145, 55, 35, 0.22),
+        rgba(75, 35, 30, 0.15)
+    );
+}
+
+/* MARS MISSION VISUAL */
+.mars-page .mission-symbol {
     background: linear-gradient(
         135deg,
-        rgba(35, 130, 160, 0.2),
-        rgba(35, 150, 110, 0.12)
+        #ff805c,
+        #d94f36
     );
+}
+
+/* MARS CLOSING BANNER */
+.mars-page .closing-banner {
+    border-color: rgba(255, 128, 92, 0.3);
+
+    background:
+        radial-gradient(
+            ellipse at 50% 120%,
+            rgba(217, 79, 54, 0.2),
+            transparent 65%
+        ),
+        var(--panel);
 }

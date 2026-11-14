@@ -1,67 +1,104 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Earth | Solar System Explorer</title>
+
     <link rel="stylesheet" href="../css/planets.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <a href="../index.html" class="logo">SOLAR SYSTEM EXPLORER</a>
+    <!-- BACKGROUND -->
+    <div class="stars"></div>
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
 
-        <nav class="nav">
-            <a href="../index.html">Home</a>
-            <a href="#overview">Overview</a>
-            <a href="#facts">Facts</a>
-            <a href="#structure">Structure</a>
+
+    <!-- NAVIGATION -->
+    <header>
+        <a href="../index.html" class="logo">
+            SOLAR SYSTEM EXPLORER
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#structure">Structure</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="earth-page" style="--planet-accent: #67d9e8;">
 
-        <!-- HERO SECTION -->
-        <section class="planet-hero">
+    <main class="earth-page">
 
-            <div class="hero-content">
-                <p class="eyebrow">THE THIRD PLANET FROM THE SUN</p>
+        <!-- =================================
+             HERO SECTION
+        ================================== -->
+
+        <section class="planet-hero hero container">
+
+            <div class="hero-copy">
+
+                <span class="eyebrow">
+                    THE THIRD PLANET FROM THE SUN
+                </span>
 
                 <h1>EARTH</h1>
 
-                <p class="hero-description">
-                    Our home planet is a world of oceans, continents,
-                    and a protective atmosphere. It is the only planet
-                    currently known to support life.
+                <p class="planet-subtitle">
+                    Our Pale Blue Dot
+                </p>
+
+                <p>
+                    A world of oceans, continents, and a protective
+                    atmosphere. Earth is the only planet currently
+                    known to support life.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#overview" class="planet-button">Explore Earth</a>
-                    <a href="#facts" class="secondary-button">Discover Facts</a>
+                    <a href="#overview" class="button button-primary">
+                        Explore Earth
+                    </a>
+
+                    <a href="#facts" class="button button-secondary">
+                        Discover Facts
+                    </a>
                 </div>
 
                 <div class="hero-stats">
+
                     <div class="stat">
-                        <h3>12,742 km</h3>
-                        <p>Diameter</p>
+                        <strong>12,742 km</strong>
+                        <span>Diameter</span>
                     </div>
 
                     <div class="stat">
-                        <h3>149.6 million km</h3>
-                        <p>Distance from Sun</p>
+                        <strong>149.6 million km</strong>
+                        <span>Distance from Sun</span>
                     </div>
 
                     <div class="stat">
-                        <h3>365.25 days</h3>
-                        <p>Orbital Period</p>
+                        <strong>365.25 days</strong>
+                        <span>Orbital Period</span>
                     </div>
+
                 </div>
+
             </div>
 
+
             <div class="hero-visual">
+
+                <div class="orbit"></div>
+                <div class="orbit orbit-two"></div>
+
                 <div class="planet-glow"></div>
 
                 <img
@@ -70,276 +107,558 @@
                     class="planet-image"
                 >
 
-                <div class="floating-label">
-                    <span>OUR HOME</span>
-                    <p>One planet, countless forms of life.</p>
+                <div class="floating-label label-top">
+                    71% WATER
                 </div>
+
+                <div class="floating-label label-bottom">
+                    OUR HOME PLANET
+                </div>
+
             </div>
 
         </section>
 
-        <!-- OVERVIEW -->
-        <section class="section" id="overview">
+
+        <!-- =================================
+             OVERVIEW
+        ================================== -->
+
+        <section class="section container" id="overview">
 
             <div class="section-heading">
-                <p class="eyebrow">GET TO KNOW EARTH</p>
-                <h2>A <span>Living Planet</span></h2>
+
+                <span class="eyebrow">
+                    GET TO KNOW EARTH
+                </span>
+
+                <h2>
+                    A <span class="gradient-text">Living Planet</span>
+                </h2>
+
+                <p>
+                    The only known planet with confirmed life.
+                </p>
+
             </div>
+
 
             <div class="overview-grid">
 
                 <div class="overview-text">
+
+                    <h2>Our Home in Space</h2>
+
                     <p>
-                        Earth is the third planet from the Sun and the
-                        largest of the four rocky planets in our Solar
-                        System. Its surface contains vast oceans,
+                        Earth is the third planet from the Sun and
+                        the largest of the four rocky planets in our
+                        Solar System. Its surface contains vast oceans,
                         continents, mountains, and deserts.
                     </p>
 
                     <p>
-                        Around 71% of Earth's surface is covered by
-                        liquid water. Its atmosphere contains nitrogen
-                        and oxygen, helping regulate temperature and
-                        protecting living organisms.
+                        Approximately 71% of Earth's surface is covered
+                        by water. Its atmosphere is mainly composed of
+                        nitrogen and oxygen, helping regulate temperature
+                        and supporting living organisms.
                     </p>
 
                     <p>
-                        Earth's position, atmosphere, and abundance of
-                        liquid water make it an environment where life
-                        can survive and develop.
+                        Earth's suitable temperatures, liquid water,
+                        atmosphere, and chemical elements create
+                        conditions that allow life to exist.
                     </p>
+
+                    <div class="highlight">
+                        Earth is the only world where life has been
+                        confirmed so far.
+                    </div>
+
                 </div>
+
 
                 <div class="image-frame">
+
                     <img
-                        src="../images/earth.png"
-                        alt="View of planet Earth from space"
+                        src="../images/earth upclose.jfif"
+                        alt="Earth photographed from space"
                     >
-                    <p>Earth viewed from space</p>
+
+                    <p class="image-caption">
+                        Earth viewed from space.
+                    </p>
+
                 </div>
 
             </div>
+
         </section>
 
-        <!-- FACTS -->
-        <section class="section" id="facts">
+
+        <!-- =================================
+             PLANETARY FACTS
+        ================================== -->
+
+        <section class="section container" id="facts">
 
             <div class="section-heading">
-                <p class="eyebrow">EARTH BY THE NUMBERS</p>
-                <h2>Planetary <span>Facts</span></h2>
+
+                <span class="eyebrow">
+                    EARTH BY THE NUMBERS
+                </span>
+
+                <h2>
+                    Planetary <span class="gradient-text">Facts</span>
+                </h2>
+
+                <p>
+                    Important measurements and characteristics
+                    of our home planet.
+                </p>
+
             </div>
+
 
             <div class="facts-grid">
 
-                <div class="fact-card">
-                    <h3>12,742 km</h3>
-                    <p class="fact-label">Diameter</p>
+                <div class="fact-card glass-card">
+
+                    <div class="fact-icon">◉</div>
+
+                    <h3>Diameter</h3>
+
+                    <p>
+                        <strong>12,742 km</strong>
+                    </p>
+
                     <p>
                         Earth has an average diameter of approximately
                         12,742 kilometres.
                     </p>
+
                 </div>
 
-                <div class="fact-card">
-                    <h3>149.6 million km</h3>
-                    <p class="fact-label">Average Distance from Sun</p>
+
+                <div class="fact-card glass-card">
+
+                    <div class="fact-icon">☀</div>
+
+                    <h3>Distance from Sun</h3>
+
                     <p>
-                        Earth orbits the Sun at an average distance of
-                        approximately 149.6 million kilometres.
+                        <strong>149.6 million km</strong>
                     </p>
+
+                    <p>
+                        Earth orbits the Sun at an average distance
+                        of approximately 149.6 million kilometres.
+                    </p>
+
                 </div>
 
-                <div class="fact-card">
-                    <h3>365.25 days</h3>
-                    <p class="fact-label">Orbital Period</p>
+
+                <div class="fact-card glass-card">
+
+                    <div class="fact-icon">↻</div>
+
+                    <h3>Orbital Period</h3>
+
+                    <p>
+                        <strong>365.25 days</strong>
+                    </p>
+
                     <p>
                         Earth takes approximately one year to complete
-                        a revolution around the Sun.
+                        one revolution around the Sun.
                     </p>
+
                 </div>
 
-                <div class="fact-card">
-                    <h3>23 h 56 min</h3>
-                    <p class="fact-label">Rotation Period</p>
+
+                <div class="fact-card glass-card">
+
+                    <div class="fact-icon">◆</div>
+
+                    <h3>Main Composition</h3>
+
                     <p>
-                        Earth takes about 23 hours and 56 minutes to
-                        rotate once relative to distant stars.
+                        <strong>Silicate rock and metal</strong>
                     </p>
+
+                    <p>
+                        Earth is mainly composed of silicate rocks,
+                        with an iron-rich metallic core.
+                    </p>
+
                 </div>
 
-                <div class="fact-card">
-                    <h3>71%</h3>
-                    <p class="fact-label">Surface Water</p>
+
+                <div class="fact-card glass-card">
+
+                    <div class="fact-icon">⟳</div>
+
+                    <h3>Rotation Period</h3>
+
                     <p>
-                        Approximately 71% of Earth's surface is covered
-                        by water, mainly in its oceans.
+                        <strong>23 hours 56 minutes</strong>
                     </p>
+
+                    <p>
+                        Earth takes approximately 23 hours and
+                        56 minutes to rotate once relative to
+                        distant stars.
+                    </p>
+
                 </div>
 
-                <div class="fact-card">
-                    <h3>1 Moon</h3>
-                    <p class="fact-label">Natural Satellite</p>
+
+                <div class="fact-card glass-card">
+
+                    <div class="fact-icon">☾</div>
+
+                    <h3>Natural Satellite</h3>
+
                     <p>
-                        Earth's Moon influences ocean tides and helps
-                        stabilise the planet's axial tilt.
+                        <strong>1 Moon</strong>
                     </p>
+
+                    <p>
+                        Earth's Moon influences ocean tides and
+                        helps stabilise Earth's axial tilt.
+                    </p>
+
                 </div>
 
             </div>
+
         </section>
 
-        <!-- COMPOSITION -->
-        <section class="section" id="structure">
+
+        <!-- =================================
+             INTERNAL STRUCTURE
+        ================================== -->
+
+        <section class="section container" id="structure">
 
             <div class="section-heading">
-                <p class="eyebrow">WHAT IS EARTH MADE OF?</p>
-                <h2>Internal <span>Structure</span></h2>
+
+                <span class="eyebrow">
+                    WHAT IS EARTH MADE OF?
+                </span>
+
+                <h2>
+                    Internal <span class="gradient-text">Structure</span>
+                </h2>
+
+                <p>
+                    Four main layers make up Earth's interior.
+                </p>
+
             </div>
 
-            <p class="section-intro">
-                Earth is mainly made of silicate rocks and metals.
-                Its interior is divided into four main layers, each
-                with different physical properties and compositions.
-            </p>
 
-            <div class="structure-grid">
+            <div class="core-grid">
 
-                <div class="structure-visual">
-                    <div class="earth-core">
-                        <div class="earth-layer crust">
-                            <div class="earth-layer mantle">
-                                <div class="earth-layer outer-core">
-                                    <div class="earth-layer inner-core"></div>
-                                </div>
+                <div class="core-copy">
+
+                    <h2>Inside Earth</h2>
+
+                    <p>
+                        Earth has four main internal layers.
+                        Each layer has a different composition,
+                        temperature, and physical state.
+                    </p>
+
+                    <p>
+                        From the thin outer crust to the extremely
+                        hot inner core, these layers help explain
+                        Earth's geological activity and magnetic field.
+                    </p>
+
+
+                    <div class="layer-list">
+
+                        <div class="layer">
+
+                            <div class="layer-dot"></div>
+
+                            <div>
+                                <strong>Crust</strong>
+                                <span>
+                                    Thin, solid outer layer made of rock.
+                                </span>
                             </div>
+
                         </div>
+
+
+                        <div class="layer">
+
+                            <div class="layer-dot"></div>
+
+                            <div>
+                                <strong>Mantle</strong>
+                                <span>
+                                    Thick layer of hot silicate rock.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="layer">
+
+                            <div class="layer-dot"></div>
+
+                            <div>
+                                <strong>Outer Core</strong>
+                                <span>
+                                    Liquid iron and nickel.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="layer">
+
+                            <div class="layer-dot"></div>
+
+                            <div>
+                                <strong>Inner Core</strong>
+                                <span>
+                                    Solid iron and nickel.
+                                </span>
+                            </div>
+
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="layer-list">
 
-                    <div class="layer-item">
-                        <h3>01. Crust</h3>
-                        <p>
-                            The thin, solid outer layer made mainly
-                            of silicate rocks. It forms the continents
-                            and ocean floors.
-                        </p>
+                <div class="structure-visual glass-card">
+
+                    <div class="structure-diagram">
+
+                        <div class="structure-layer structure-mantle">
+
+                            <div class="structure-layer structure-core">
+
+                                <div class="earth-inner-core"></div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="layer-item">
-                        <h3>02. Mantle</h3>
-                        <p>
-                            A thick layer of hot silicate rock that
-                            slowly flows over geological timescales.
-                        </p>
-                    </div>
+                    <div class="structure-legend">
 
-                    <div class="layer-item">
-                        <h3>03. Outer Core</h3>
-                        <p>
-                            A liquid layer mainly composed of iron
-                            and nickel. Its movement helps generate
-                            Earth's magnetic field.
-                        </p>
-                    </div>
+                        <div>
+                            <span class="legend-dot crust-dot"></span>
+                            Crust
+                        </div>
 
-                    <div class="layer-item">
-                        <h3>04. Inner Core</h3>
-                        <p>
-                            A solid sphere mainly composed of iron
-                            and nickel, kept solid by enormous pressure.
-                        </p>
+                        <div>
+                            <span class="legend-dot mantle-dot"></span>
+                            Mantle
+                        </div>
+
+                        <div>
+                            <span class="legend-dot core-dot"></span>
+                            Outer Core
+                        </div>
+
+                        <div>
+                            <span class="legend-dot inner-core-dot"></span>
+                            Inner Core
+                        </div>
+
                     </div>
 
                 </div>
-            </div>
-        </section>
 
-        <!-- UNIQUE SCIENTIFIC FACT -->
-        <section class="section">
-
-            <div class="discovery-card">
-                <p class="eyebrow">WHAT MAKES EARTH UNIQUE?</p>
-
-                <h2>The Only Known World with <span>Life</span></h2>
-
-                <p>
-                    Earth is currently the only planet known to support
-                    life. Its liquid-water oceans, suitable temperatures,
-                    protective atmosphere, and chemical elements create
-                    conditions that allow living organisms to survive.
-                </p>
-
-                <p>
-                    Scientists continue searching for signs of life
-                    beyond Earth, but no confirmed evidence of
-                    extraterrestrial life has been discovered.
-                </p>
             </div>
 
         </section>
 
-        <!-- SPACE EXPLORATION -->
-        <section class="section">
+
+        <!-- =================================
+             UNIQUE SCIENTIFIC FACT
+        ================================== -->
+
+        <section class="section container">
+
+            <div class="discovery-card glass-card">
+
+                <div class="discovery-content">
+
+                    <span class="eyebrow">
+                        WHAT MAKES EARTH UNIQUE?
+                    </span>
+
+                    <h2>
+                        The Only Known Planet to
+                        <span class="gradient-text">Support Life</span>
+                    </h2>
+
+                    <p>
+                        Earth is currently the only planet known to
+                        support life. Its liquid-water oceans, suitable
+                        temperatures, protective atmosphere, and
+                        available chemical elements provide conditions
+                        that allow living organisms to exist.
+                    </p>
+
+                    <p>
+                        Scientists continue searching for signs of
+                        life beyond Earth, but no extraterrestrial
+                        life has been confirmed.
+                    </p>
+
+                </div>
+
+
+                <div class="discovery-stats">
+
+                    <div class="discovery-stat">
+
+                        <strong>71%</strong>
+
+                        <span>
+                            Surface covered by water
+                        </span>
+
+                    </div>
+
+
+                    <div class="discovery-stat">
+
+                        <strong>1</strong>
+
+                        <span>
+                            Confirmed life-supporting planet
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             SPACE EXPLORATION
+        ================================== -->
+
+        <section class="section container">
 
             <div class="section-heading">
-                <p class="eyebrow">OBSERVING OUR HOME</p>
-                <h2>Exploring <span>Earth</span></h2>
+
+                <span class="eyebrow">
+                    OBSERVING OUR HOME
+                </span>
+
+                <h2>
+                    Exploring <span class="gradient-text">Earth</span>
+                </h2>
+
+                <p>
+                    Satellites allow scientists to study our planet
+                    from space.
+                </p>
+
             </div>
 
-            <div class="mission-card">
 
-                <div class="mission-symbol">NASA</div>
+            <div class="mission-card glass-card">
+
+                <div class="mission-visual">
+
+                    <div class="mission-orbit"></div>
+
+                    <div class="mission-symbol">
+                        L
+                    </div>
+
+                </div>
+
 
                 <div class="mission-content">
-                    <h3>Earth-Observing Satellites</h3>
+
+                    <h2>Landsat Programme</h2>
 
                     <p>
-                        Satellites such as those in NASA's Landsat
-                        programme observe Earth's surface over time.
-                        They collect information about forests,
-                        agriculture, water resources, and environmental
-                        changes.
+                        The Landsat programme uses satellites to
+                        observe Earth's surface over time. Its images
+                        help scientists study forests, agriculture,
+                        water resources, and environmental changes.
                     </p>
 
-                    <div class="tag-list">
-                        <span>Earth Observation</span>
-                        <span>Climate Research</span>
-                        <span>Remote Sensing</span>
+                    <div class="mission-tags">
+
+                        <span class="tag">Earth Observation</span>
+
+                        <span class="tag">Climate Research</span>
+
+                        <span class="tag">Remote Sensing</span>
+
                     </div>
+
                 </div>
 
             </div>
+
         </section>
 
-        <!-- NEXT PLANET -->
-        <section class="section">
+
+        <!-- =================================
+             NEXT PLANET
+        ================================== -->
+
+        <section class="section container">
 
             <div class="closing-banner">
-                <p class="eyebrow">CONTINUE YOUR JOURNEY</p>
 
-                <h2>Next Stop: <span>Mars</span></h2>
+                <span class="eyebrow">
+                    CONTINUE YOUR JOURNEY
+                </span>
+
+                <h2>
+                    Next Stop:
+                    <span class="gradient-text">Mars</span>
+                </h2>
 
                 <p>
-                    Travel beyond Earth and discover the red planet,
+                    Travel beyond Earth and discover the Red Planet,
                     a world of ancient valleys, enormous volcanoes,
                     and fascinating scientific mysteries.
                 </p>
 
-                <a href="mars.html" class="planet-button">
+                <a href="mars.html" class="button button-primary">
                     Explore Mars →
                 </a>
+
             </div>
 
         </section>
 
     </main>
 
+
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
+
         <p>© 2026 Solar System Explorer</p>
-        <a href="../index.html">Return to Solar System</a>
+
+        <p>
+            <a href="../index.html">Return to Solar System</a>
+        </p>
+
     </footer>
 
 </body>
