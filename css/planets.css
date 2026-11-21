@@ -1812,3 +1812,115 @@ footer a {
         ),
         var(--panel);
 }
+
+/* =========================================
+   URANUS PLANET THEME
+========================================= */
+
+.uranus-page {
+    --planet-accent: #80e5e8;
+}
+
+/* URANUS ATMOSPHERE */
+.uranus-page .planet-glow {
+    background: radial-gradient(
+        circle,
+        rgba(100, 220, 225, 0.35),
+        rgba(65, 160, 190, 0.16) 50%,
+        transparent 75%
+    );
+}
+
+.uranus-page .orbit {
+    border-color: rgba(128, 229, 232, 0.23);
+}
+
+.uranus-page .orbit-two {
+    border-color: rgba(65, 160, 190, 0.25);
+}
+
+.uranus-page .planet-image {
+    filter: drop-shadow(
+        0 0 35px rgba(100, 220, 225, 0.4)
+    );
+}
+
+/* URANUS ACCENT COLOURS */
+.uranus-page .planet-subtitle {
+    color: var(--planet-accent);
+}
+
+.uranus-page .eyebrow {
+    color: var(--planet-accent);
+}
+
+.uranus-page .button-primary {
+    background: linear-gradient(
+        110deg,
+        #80e5e8,
+        #45b7c8
+    );
+    color: #06171b;
+}
+
+/* INTERNAL STRUCTURE DIAGRAM */
+.uranus-page .uranus-structure-diagram {
+    background: #9de5e8;
+    box-shadow: 0 0 45px rgba(100, 220, 225, 0.2);
+}
+
+.uranus-page .structure-mantle {
+    width: 85%;
+    background: #368f9e;
+}
+
+.uranus-page .structure-core {
+    width: 65%;
+    background: #c1e9d9;
+}
+
+/* STRUCTURE LEGEND */
+.uranus-page .crust-dot {
+    background: #9de5e8;
+}
+
+.uranus-page .mantle-dot {
+    background: #368f9e;
+}
+
+.uranus-page .core-dot {
+    background: #c1e9d9;
+}
+
+/* URANUS DISCOVERY SECTION */
+.uranus-page .discovery-card {
+    border-color: rgba(128, 229, 232, 0.3);
+
+    background: linear-gradient(
+        145deg,
+        rgba(40, 135, 155, 0.22),
+        rgba(35, 85, 115, 0.15)
+    );
+}
+
+/* URANUS MISSION VISUAL */
+.uranus-page .mission-symbol {
+    background: linear-gradient(
+        135deg,
+        #80e5e8,
+        #45b7c8
+    );
+}
+
+/* URANUS CLOSING BANNER */
+.uranus-page .closing-banner {
+    border-color: rgba(128, 229, 232, 0.3);
+
+    background:
+        radial-gradient(
+            ellipse at 50% 120%,
+            rgba(69, 183, 200, 0.2),
+            transparent 65%
+        ),
+        var(--panel);
+}
