@@ -56,6 +56,11 @@ button {
   font: inherit;
 }
 
+
+/* ==========================================
+   NAVBAR — LOGO INTEGRATED
+   ========================================== */
+
 .topbar {
   width: min(1240px, calc(100% - 48px));
   min-height: 82px;
@@ -70,26 +75,26 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: 'Orbitron', sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -.4px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.brand > span:last-child {
-  color: var(--cyan);
-}
-
-.brand-icon {
-  color: var(--purple);
-  font-size: 24px;
+.brand-logo {
+  display: block;
+  height: 65px;
+  width: auto;
+  object-fit: contain;
 }
 
 .topbar nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
 }
 
@@ -99,8 +104,61 @@ button {
   border-radius: 12px;
   color: var(--muted);
   font-size: 13px;
+  white-space: nowrap;
   transition: .2s ease;
 }
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text);
+  background: rgba(103, 232, 249, .07);
+  border-color: rgba(103, 232, 249, .18);
+}
+
+/* TABLET */
+@media (max-width: 760px) {
+  .topbar {
+    width: calc(100% - 30px);
+    min-height: 72px;
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 12px;
+    gap: 7px;
+  }
+
+  .brand-logo {
+    height: 65px;
+  }
+
+  .topbar nav {
+    gap: 2px;
+  }
+
+  .nav-link {
+    padding: 8px;
+    font-size: 11px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 420px) {
+  .brand {
+    gap: 4px;
+    font-size: 10px;
+  }
+
+  .brand-logo {
+    height: 65px;
+  }
+
+  .nav-link {
+    padding: 7px 5px;
+    font-size: 10px;
+  }
+}
+
 
 .nav-link:hover,
 .nav-link.active {
