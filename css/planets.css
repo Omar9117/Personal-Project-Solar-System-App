@@ -1588,3 +1588,227 @@ footer a {
         ),
         var(--panel);
 }
+
+/* =========================================
+   JUPITER PLANET THEME
+========================================= */
+
+.jupiter-page {
+    --planet-accent: #e9b878;
+}
+
+/* JUPITER ATMOSPHERE */
+.jupiter-page .planet-glow {
+    background: radial-gradient(
+        circle,
+        rgba(233, 184, 120, 0.32),
+        rgba(190, 115, 65, 0.16) 50%,
+        transparent 75%
+    );
+}
+
+.jupiter-page .orbit {
+    border-color: rgba(233, 184, 120, 0.22);
+}
+
+.jupiter-page .orbit-two {
+    border-color: rgba(190, 115, 65, 0.25);
+}
+
+.jupiter-page .planet-image {
+    filter: drop-shadow(
+        0 0 35px rgba(233, 184, 120, 0.4)
+    );
+}
+
+/* JUPITER ACCENT COLOURS */
+.jupiter-page .planet-subtitle {
+    color: var(--planet-accent);
+}
+
+.jupiter-page .eyebrow {
+    color: var(--planet-accent);
+}
+
+.jupiter-page .button-primary {
+    background: linear-gradient(
+        110deg,
+        #e9b878,
+        #c77b45
+    );
+    color: #1a1008;
+}
+
+/* INTERNAL STRUCTURE DIAGRAM */
+.jupiter-page .jupiter-structure-diagram {
+    background: #d9ad7b;
+    box-shadow: 0 0 45px rgba(233, 184, 120, 0.2);
+}
+
+.jupiter-page .structure-mantle {
+    width: 85%;
+    background: #b96f45;
+}
+
+.jupiter-page .structure-core {
+    width: 65%;
+    background: #e8c28b;
+}
+
+/* STRUCTURE LEGEND */
+.jupiter-page .crust-dot {
+    background: #d9ad7b;
+}
+
+.jupiter-page .mantle-dot {
+    background: #b96f45;
+}
+
+.jupiter-page .core-dot {
+    background: #e8c28b;
+}
+
+/* JUPITER DISCOVERY SECTION */
+.jupiter-page .discovery-card {
+    border-color: rgba(233, 184, 120, 0.3);
+
+    background: linear-gradient(
+        145deg,
+        rgba(160, 100, 55, 0.22),
+        rgba(90, 55, 35, 0.15)
+    );
+}
+
+/* JUPITER MISSION VISUAL */
+.jupiter-page .mission-symbol {
+    background: linear-gradient(
+        135deg,
+        #e9b878,
+        #c77b45
+    );
+}
+
+/* JUPITER CLOSING BANNER */
+.jupiter-page .closing-banner {
+    border-color: rgba(233, 184, 120, 0.3);
+
+    background:
+        radial-gradient(
+            ellipse at 50% 120%,
+            rgba(199, 123, 69, 0.2),
+            transparent 65%
+        ),
+        var(--panel);
+}
+
+/* =========================================
+   SATURN PLANET THEME
+========================================= */
+
+.saturn-page {
+    --planet-accent: #e8c995;
+}
+
+/* SATURN ATMOSPHERE */
+.saturn-page .planet-glow {
+    background: radial-gradient(
+        circle,
+        rgba(232, 201, 149, 0.32),
+        rgba(190, 145, 90, 0.16) 50%,
+        transparent 75%
+    );
+}
+
+.saturn-page .orbit {
+    border-color: rgba(232, 201, 149, 0.25);
+}
+
+.saturn-page .orbit-two {
+    border-color: rgba(190, 145, 90, 0.28);
+}
+
+.saturn-page .planet-image {
+    filter: drop-shadow(
+        0 0 35px rgba(232, 201, 149, 0.4)
+    );
+}
+
+/* SATURN ACCENT COLOURS */
+.saturn-page .planet-subtitle {
+    color: var(--planet-accent);
+}
+
+.saturn-page .eyebrow {
+    color: var(--planet-accent);
+}
+
+.saturn-page .button-primary {
+    background: linear-gradient(
+        110deg,
+        #e8c995,
+        #c69b60
+    );
+    color: #1a1208;
+}
+
+/* INTERNAL STRUCTURE DIAGRAM */
+.saturn-page .saturn-structure-diagram {
+    background: #e4c99c;
+    box-shadow: 0 0 45px rgba(232, 201, 149, 0.2);
+}
+
+.saturn-page .structure-mantle {
+    width: 85%;
+    background: #b98558;
+}
+
+.saturn-page .structure-core {
+    width: 65%;
+    background: #e8bd80;
+}
+
+/* STRUCTURE LEGEND */
+.saturn-page .crust-dot {
+    background: #e4c99c;
+}
+
+.saturn-page .mantle-dot {
+    background: #b98558;
+}
+
+.saturn-page .core-dot {
+    background: #e8bd80;
+}
+
+/* SATURN DISCOVERY SECTION */
+.saturn-page .discovery-card {
+    border-color: rgba(232, 201, 149, 0.3);
+
+    background: linear-gradient(
+        145deg,
+        rgba(160, 125, 75, 0.22),
+        rgba(90, 70, 40, 0.15)
+    );
+}
+
+/* SATURN MISSION VISUAL */
+.saturn-page .mission-symbol {
+    background: linear-gradient(
+        135deg,
+        #e8c995,
+        #c69b60
+    );
+}
+
+/* SATURN CLOSING BANNER */
+.saturn-page .closing-banner {
+    border-color: rgba(232, 201, 149, 0.3);
+
+    background:
+        radial-gradient(
+            ellipse at 50% 120%,
+            rgba(198, 155, 96, 0.2),
+            transparent 65%
+        ),
+        var(--panel);
+}
