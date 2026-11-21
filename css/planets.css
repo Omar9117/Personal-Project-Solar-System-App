@@ -1924,3 +1924,115 @@ footer a {
         ),
         var(--panel);
 }
+
+/* =========================================
+   NEPTUNE PLANET THEME
+========================================= */
+
+.neptune-page {
+    --planet-accent: #669dff;
+}
+
+/* NEPTUNE ATMOSPHERE */
+.neptune-page .planet-glow {
+    background: radial-gradient(
+        circle,
+        rgba(65, 115, 255, 0.36),
+        rgba(45, 65, 180, 0.17) 50%,
+        transparent 75%
+    );
+}
+
+.neptune-page .orbit {
+    border-color: rgba(102, 157, 255, 0.24);
+}
+
+.neptune-page .orbit-two {
+    border-color: rgba(65, 95, 210, 0.28);
+}
+
+.neptune-page .planet-image {
+    filter: drop-shadow(
+        0 0 35px rgba(65, 115, 255, 0.45)
+    );
+}
+
+/* NEPTUNE ACCENT COLOURS */
+.neptune-page .planet-subtitle {
+    color: var(--planet-accent);
+}
+
+.neptune-page .eyebrow {
+    color: var(--planet-accent);
+}
+
+.neptune-page .button-primary {
+    background: linear-gradient(
+        110deg,
+        #669dff,
+        #405bd5
+    );
+    color: #ffffff;
+}
+
+/* INTERNAL STRUCTURE DIAGRAM */
+.neptune-page .neptune-structure-diagram {
+    background: #527bd7;
+    box-shadow: 0 0 45px rgba(65, 115, 255, 0.25);
+}
+
+.neptune-page .structure-mantle {
+    width: 85%;
+    background: #244caa;
+}
+
+.neptune-page .structure-core {
+    width: 65%;
+    background: #a5c5ff;
+}
+
+/* STRUCTURE LEGEND */
+.neptune-page .crust-dot {
+    background: #527bd7;
+}
+
+.neptune-page .mantle-dot {
+    background: #244caa;
+}
+
+.neptune-page .core-dot {
+    background: #a5c5ff;
+}
+
+/* NEPTUNE DISCOVERY SECTION */
+.neptune-page .discovery-card {
+    border-color: rgba(102, 157, 255, 0.3);
+
+    background: linear-gradient(
+        145deg,
+        rgba(40, 75, 165, 0.25),
+        rgba(25, 40, 105, 0.17)
+    );
+}
+
+/* NEPTUNE MISSION VISUAL */
+.neptune-page .mission-symbol {
+    background: linear-gradient(
+        135deg,
+        #669dff,
+        #405bd5
+    );
+}
+
+/* NEPTUNE CLOSING BANNER */
+.neptune-page .closing-banner {
+    border-color: rgba(102, 157, 255, 0.3);
+
+    background:
+        radial-gradient(
+            ellipse at 50% 120%,
+            rgba(65, 95, 210, 0.23),
+            transparent 65%
+        ),
+        var(--panel);
+}
